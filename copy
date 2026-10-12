@@ -1,9 +1,1 @@
-$mailmindArgs = @(
-  '-m','..\mailmind-model\Qwen3.5-4B-Q4_K_M.gguf',
-  '--alias','Qwen3.5-4B-Q4_K_M',
-  '--host','127.0.0.1','--port','8082',
-  '-c','8192','-np','1','-ngl','24',
-  '-b','256','-ub','128',
-  '--reasoning','off','--log-disable'
-)
-& "..\mailmind-model\runtime\llama-server.exe" @mailmindArgs
+& "..\mailmind-model\runtime\llama-server.exe" -m "..\mailmind-model\Qwen3.5-4B-Q4_K_M.gguf" --alias "Qwen3.5-4B-Q4_K_M" --host 127.0.0.1 --port 8082 -c 8192 -np 1 -ngl 24 -b 256 -ub 128 --reasoning off --log-disable
