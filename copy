@@ -1,1 +1,1 @@
-.\.venv\Scripts\python.exe -m pip install -r requirements.lock
+.\.venv\Scripts\python.exe scripts/fetch_candidate_model.py --directory ..\mailmind-model
